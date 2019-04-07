@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Note;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -24,6 +25,7 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        Route::model('note', Note::class);
 
         parent::boot();
     }

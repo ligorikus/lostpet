@@ -13,5 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/image', 'ImageController@upload')->name('images.upload');
-Route::get('/notes', 'NoteController@index')->name('notes.list');
+Route::post('image', 'ImageController@upload')->name('images.upload');
+
+Route::get('notes', 'NoteController@index')->name('notes.list');
+Route::get('notes/{note}', 'NoteController@view')->name('notes.view');
+Route::post('notes', 'NoteController@store')->name('notes.store');
