@@ -1,5 +1,5 @@
 <?php
 
 Route::get('/', function () {
-    return redirect('/notes');
+    return view('test');
 });

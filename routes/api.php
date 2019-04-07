@@ -13,4 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/notes', 'NoteController@index');
+Route::post('/image', 'ImageController@upload')->name('images.upload');
+Route::get('/notes', 'NoteController@index')->name('notes.list');

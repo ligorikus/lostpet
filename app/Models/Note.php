@@ -11,7 +11,7 @@ class Note extends Model
         'address',
         'description'
     ];
-    protected $guarded = [
+    protected $hidden = [
         'address'
     ];
 
